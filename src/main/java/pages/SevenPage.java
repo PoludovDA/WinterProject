@@ -32,7 +32,6 @@ public class SevenPage {
             throw new RuntimeException(e);
         }
 
-        List<HarEntry> requests = bmp.getHar().getLog().getEntries();
-        return requests;
+        return bmp.getHar().getLog().getEntries();
     }
 }
